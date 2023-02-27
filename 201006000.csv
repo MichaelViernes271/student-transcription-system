@@ -1,0 +1,8 @@
+﻿Level,Degree,Term,courseName,courseID,courseType,creditHours,Grade
+U,BS1,1,CourseA1,CA1,Major,3,85
+U,BS1,1,CourseA2,CA2,Minor,4,86
+U,BS1,1,CourseA3,CA3,Major,3,87
+U,BS1,2,CourseA4,CA4,Minor,4,88
+U,BS1,2,CourseA5,CA5,Major,3,89
+U,BS1,2,CourseA6,CA6,Minor,4,90
+U,BS1,3,CourseA7,CA7,Major,3,91
