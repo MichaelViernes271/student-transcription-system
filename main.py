@@ -6,7 +6,8 @@
 
 from user_input import userInput
 from menu_feature import menuFeature
-from transcript_feature import transcriptFeature
+from major_feature import majorTranscriptFeature
+from minor_feature import minorTranscriptFeature
 
 def main():
 	"""The main program."""
@@ -14,6 +15,9 @@ def main():
 	# testing the customized modules
 	# menuFeature()
 	# userInput()
-	transcriptFeature()
+	majorTranscriptFeature()
+	print("x"*100)
+	minorTranscriptFeature()
+	
 if __name__ == "__main__":
 	main()
