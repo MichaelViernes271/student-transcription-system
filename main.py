@@ -6,12 +6,14 @@
 
 from user_input import userInput
 from menu_feature import menuFeature
+from transcript_feature import transcriptFeature
 
 def main():
 	"""The main program."""
 
 	# testing the customized modules
 	# menuFeature()
-	userInput()
+	# userInput()
+	transcriptFeature()
 if __name__ == "__main__":
 	main()

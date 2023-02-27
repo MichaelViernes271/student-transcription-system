@@ -1,0 +1,6 @@
+Name: Ibrahim Ahmed Nemer
+stdID: 201006000
+Level(s): U, G, G
+Number of terms: 8, 4, 6
+College(s): College1, College1, College1
+Department(s): C1Department1, C1Department1, C1Department1
