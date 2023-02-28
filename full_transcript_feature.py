@@ -108,10 +108,14 @@ def display_transcript(courses, term, typeofcourse):
 
 
     # print(f"major: {major_grades}, \nminor: {minor_grades}\ntypes: major{type(major_grades)}, minor{type(minor_grades)}")
-    term_average = [major_grades + minor_grades]
+
+    term_average = [] # compute term average by making joining major n minor grades
+    term_average.append(major_grades)
+    term_average.append(minor_grades)
     term_average = average(term_average) # compute current term average
     all_term_average = overall_average(courses) # compute  overall term average
 
+    # formatting the averages according to the values
     text_major_average = "Major Average: {}".format(major_grades)
     print(text_major_average, end="\t")
     text_minor_average = "Minor Average: {}".format(minor_grades)
@@ -120,6 +124,9 @@ def display_transcript(courses, term, typeofcourse):
     print(text_term_average, end="\t")
     text_all_term_average = f"Overall Average: {all_term_average}"
     print(text_all_term_average, "\n")
+
+    # returning the concatanated temp_data containing 
+    # the full records to call the function storeToText()
     temp_data += "\n" + text_major_average + "\t" + text_minor_average + "\n"
     temp_data += text_term_average + "\t" + text_all_term_average + "\n"
     return temp_data
@@ -200,10 +207,10 @@ def average(grades):
     """Compute the average of a list."""
     # rounded to 2 decimals by format
     # print(f"DEBUGGING {grades}".center(50, "+"))
-    if grades == []:
+    if grades == [] or len(grades) == 1:
         return grades
     else:
-        overall_average = round(statistics.mean(grades), 3)
+        overall_average = math.floor(statistics.mean(grades))
         overall_average = f"{overall_average:4.2f}"
     return overall_average
 

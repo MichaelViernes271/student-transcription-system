@@ -81,13 +81,13 @@ def display_transcript(courses, term, typeofcourse):
             grades.append(grade)
     
     subject_average = average(grades) # compute average each term
-    overall_average = average(grades) # compute  overall term average
+    all_term_average = overall_average(courses) # compute  overall term average
 
     text_average = "{} Average: {}".format(typeofcourse.title(), subject_average)
     print(text_average, end="\t")
-    text_overall_average = f"Overall Average: {overall_average}"
-    print(text_overall_average)
-    return "\n" + temp_data + "\n" + text_average + "\t" + text_overall_average
+    text_all_term_average = f"Overall Average: {all_term_average}"
+    print(text_all_term_average)
+    return "\n" + temp_data + "\n" + text_average + "\t" + text_all_term_average
 
 
 def storeToText(data, stdID, typeofcourse):
@@ -160,11 +160,23 @@ def createStudentDictionary(csv_file, student_ID, level):
 
 
 def average(grades):
+    """Compute the average of a list."""
     # rounded to 2 decimals by format
-    overall_average = round(statistics.mean(grades), 3)
+    overall_average = math.floor(statistics.mean(grades))
     overall_average = f"{overall_average:4.2f}"
     return overall_average
 
+def overall_average(courses):
+    """Returns the overall average of all terms"""
+    grades = [] # for storing the data in separate course each term
+
+    for course in courses:
+            # convert grades into int
+            grade = int(course[7])
+            grades.append(grade)
+    
+    grade = average(grades) # compute the whole terms
+    return grade
 
 def decorator(label):
     """Puts a design around a label (e.g. for each term."""
