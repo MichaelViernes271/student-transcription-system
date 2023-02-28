@@ -6,8 +6,8 @@
 
 from user_input import userInput
 from menu_feature import menuFeature
-from major_feature import majorTranscriptFeature
-from minor_feature import minorTranscriptFeature
+from major_transcript_feature import majorTranscriptFeature
+from minor_transcript_feature import minorTranscriptFeature
 
 def main():
 	"""The main program."""
