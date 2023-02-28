@@ -1,8 +1,8 @@
 from transcript_feature import transcriptFeature
 
-def majorTranscriptFeature(csv_stdID, csv_studentDetails, typeofcourse):
+def minorTranscriptFeature(csv_stdID, csv_studentDetails, level, typeofcourse):
 	"""Uses the transcriptFeature() for all minors"""
-	transcriptFeature(csv_stdID, csv_studentDetails, typeofcourse)
+	transcriptFeature(csv_stdID, csv_studentDetails, level, typeofcourse)
 
 
 def validate():

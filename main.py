@@ -15,9 +15,20 @@ def main():
 	# testing the customized modules
 	# menuFeature()
 	# userInput()
-	majorTranscriptFeature()
+	validate()
+
+
+def validate():
+	"""Validates the files to be displayed and encoded in text files."""
+	csv_stdID= "201006000.csv"
+	csv_studentDetails = "studentDetails.csv"
+	typeofcourse =  "minor"
+	level = "U"
+
+	majorTranscriptFeature(csv_stdID, csv_studentDetails, level, typeofcourse)
 	print("x"*100)
-	minorTranscriptFeature()
+	typeofcourse = "major"
+	minorTranscriptFeature(csv_stdID, csv_studentDetails, level, typeofcourse)
 	
 if __name__ == "__main__":
 	main()
