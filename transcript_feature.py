@@ -83,7 +83,7 @@ def display_transcript(courses, term, typeofcourse):
     subject_average = average(grades) # compute average each term
     overall_average = average(grades) # compute  overall term average
 
-    text_average = "{} Average: ".format(typeofcourse.title())
+    text_average = "{} Average: {}".format(typeofcourse.title(), subject_average)
     print(text_average, end="\t")
     text_overall_average = f"Overall Average: {overall_average}"
     print(text_overall_average)
