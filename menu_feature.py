@@ -17,4 +17,6 @@ def menuFeature():
         print("=", i, "=")
     print("=" * 60)
 
-menuFeature()
+if __name__ == '__main__':
+    menuFeature()
+    
