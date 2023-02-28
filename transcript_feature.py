@@ -57,7 +57,7 @@ def transcriptFeature(student_ID, csv_studentDetails, level, typeofcourse=None):
             temp_data = display_transcript(courses, term, typeofcourse)
             storeToText(temp_data, student_ID, typeofcourse)
 
-        temp_data = decorator(f"End of Transcript for Level ()") # marks successive terms and the end
+        temp_data = decorator(f"End of Transcript for Level ({level})") # marks successive terms and the end
         print(temp_data)
         storeToText("\n"+temp_data, student_ID, typeofcourse)
 
@@ -83,7 +83,7 @@ def display_transcript(courses, term, typeofcourse):
     subject_average = average(grades) # compute average each term
     overall_average = average(grades) # compute  overall term average
 
-    text_average = "{} Average: ".format(typeofcourse.title())
+    text_average = "{} Average: {}".format(typeofcourse.title(), subject_average)
     print(text_average, end="\t")
     text_overall_average = f"Overall Average: {overall_average}"
     print(text_overall_average)
