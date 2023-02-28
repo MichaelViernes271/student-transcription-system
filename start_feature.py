@@ -112,9 +112,9 @@ def startFeature():
 
 # PROGRAM STARTS HERE:
 # Initialize user input values by calling startFeature()
-student_in_data, student_ID, student_name, student_college, student_department, student_level, student_terms = startFeature()
-if student_in_data == True:
-    print("Student found in database! \n")
+# student_in_data, student_ID, student_name, student_college, student_department, student_level, student_terms = startFeature()
+# if student_in_data == True:
+#     print("Student found in database! \n")
 
 # TEST VALUES
 #print(f"\nStudent level: {student_level} \nStudent degree: {student_degree} \nStudent ID: {student_ID}")

@@ -1,4 +1,5 @@
 from datetime import datetime
+import os, time
 
 
 def previousRequestsFeature(history, stdID):
@@ -16,6 +17,10 @@ def previousRequestsFeature(history, stdID):
         with open(filename, 'a') as f:
             for record in history:   
                 f.write(f"\n{record[0]}\t\t{record[1]}\t\t{record[2]}") # Writes request history into user's previous requests file
+
+    # Clear console screen and sleep after a few seconds
+    time.sleep(5)
+    os.system("cls")
 
 
 # Adds transcript request to request history
@@ -38,31 +43,34 @@ def add_request(choice, history):
     current_request = [choice, current_date, current_time]
     history.append(current_request)
 
-
+def create_history_list():
+    history = []
+    return history
+    
 # PROGRAM STARTS HERE
 # IMPORTANT - RequestHistory list & PreviousRequests txt file must be initialized first (can be intialized after getting stdID from startFeature)
 
-stdID = '201006000' # Test value for stdID from startFeature
+# stdID = '201006000' # Test value for stdID from startFeature
 
-request_history = []    # Initializes empty request history list
+# request_history = []    # Initializes empty request history list
 
-# Creates RequestHistory list & PreviousRequests txt file with user's student ID
-prev_requests_file = f"std{stdID}PreviousRequests.txt"
-with open(prev_requests_file, 'w') as f:
-    f.write("Request\t\tDate\t\t\tTime \n")
-    f.write("="*40)
+# # Creates RequestHistory list & PreviousRequests txt file with user's student ID
+# prev_requests_file = f"std{stdID}PreviousRequests.txt"
+# with open(prev_requests_file, 'w') as f:
+#     f.write("Request\t\tDate\t\t\tTime \n")
+#     f.write("="*40)
 
 
 # PREVIOUS REQUEST FEATURE TEST STARTS HERE
 # Currently using test values from user_input to test the program
-user_input = 3
-add_request(user_input, request_history)
+# user_input = 3
+# add_request(user_input, request_history)
 
-user_input = 4
-add_request(user_input, request_history)
+# user_input = 4
+# add_request(user_input, request_history)
 
-user_input = 5
-add_request(user_input, request_history)
+# user_input = 5
+# add_request(user_input, request_history)
 
-# Calls previousRequestsFeature()
-previousRequestsFeature(request_history, stdID)
+# # Calls previousRequestsFeature()
+# previousRequestsFeature(request_history, stdID)

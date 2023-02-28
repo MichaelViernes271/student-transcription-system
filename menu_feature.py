@@ -17,6 +17,9 @@ def menuFeature():
         print("=", i, "=")
     print("=" * 60)
 
-if __name__ == '__main__':
-    menuFeature()
-    
+    # Gets and returns user input from menu
+    user_input = int(input("Enter your feature: "))
+    return user_input
+
+# if __name__ == '__main__':
+#     menuFeature()
