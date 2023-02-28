@@ -1,0 +1,29 @@
+Name: Ibrahim Ahmed Nemer       stdID: 201006000                
+College: U                         Department: College1                 
+Major: C1D1MajorBS1              Minor: C1D1MinorBS1             
+Level: C1Department              No. of terms: 4                        
+
+============================================================
+**********************    Term 1     **********************
+============================================================
+Course ID      Course Name    Credit Hours   Grade          
+BS1            CourseA6       3              82             
+    
+Major Average: 84.25	Overall Average: 85.50
+============================================================
+**********************    Term 2     **********************
+============================================================
+Course ID      Course Name    Credit Hours   Grade          
+BS1            CourseA14      3              85             
+    
+Major Average: 87.67	Overall Average: 85.50
+============================================================
+**********************    Term 3     **********************
+============================================================
+Course ID      Course Name    Credit Hours   Grade          
+BS1            CourseA18      3              80             
+    
+Major Average: 85.00	Overall Average: 85.50
+============================================================
+**********************End of Transcript for Level (U)**********************
+============================================================

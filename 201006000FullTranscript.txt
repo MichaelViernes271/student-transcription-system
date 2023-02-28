@@ -1,0 +1,68 @@
+Name: Ibrahim Ahmed Nemer       stdID: 201006000                
+College: U                         Department: College1                 
+Major: C1D1MajorBS1              Minor: C1D1MinorBS1             
+Level: C1Department              No. of terms: 4                        
+
+============================================================
+**********************    Term 1     **********************
+============================================================
+Course ID      Course Name    Credit Hours   Grade          
+BS1            CourseA1       3              87             
+    
+BS1            CourseA2       4              90             
+    
+BS1            CourseA3       3              83             
+    
+BS1            CourseA4       3              85             
+    
+BS1            CourseA5       4              80             
+    
+BS1            CourseA6       3              82             
+    
+
+Major Average: 84.25	Minor Average: 85.0
+Term Average: 169.25	Overall Average: 87.67
+
+============================================================
+**********************    Term 2     **********************
+============================================================
+Course ID      Course Name    Credit Hours   Grade          
+BS1            CourseA7       4              88             
+    
+BS1            CourseA8       3              89             
+    
+BS1            CourseA9       4              90             
+    
+BS1            CourseA10      4              82             
+    
+BS1            CourseA11      3              89             
+    
+BS1            CourseA12      4              99             
+    
+BS1            CourseA14      3              85             
+    
+BS1            CourseA15      4              95             
+    
+BS1            CourseA17      4              99             
+    
+
+Major Average: 87.67	Minor Average: 92.17
+Term Average: 179.84	Overall Average: 87.67
+
+============================================================
+**********************    Term 3     **********************
+============================================================
+Course ID      Course Name    Credit Hours   Grade          
+BS1            CourseA13      3              91             
+    
+BS1            CourseA16      3              84             
+    
+BS1            CourseA18      3              80             
+    
+
+Major Average: 85.0	Minor Average: 0
+Term Average: 85.00	Overall Average: 87.67
+
+============================================================
+**********************End of Transcript for Level (U)**********************
+============================================================
